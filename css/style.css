@@ -1,5 +1,6 @@
 body{
     font-family: "ff-meta-serif-web-pro", Georgia, serif;
+    display: block;
 }
 
 html > body {
@@ -14,13 +15,6 @@ nav {
 li {
     position: relative;  
 }
-
-/* header.banner{
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    transition: all 0.15s ease-in-out;
-} */
 
 
 header[role="banner"] {
@@ -38,36 +32,11 @@ header[role="banner"] {
     }
 
 
-.page-wrap {
+header .page-wrap {
     margin: 0 auto;
     width: 90%;
     max-width: 1600px;
 }
-
-
-@media screen and (max-width: 768px) {
-    /* line 270, scss/style.scss */
-    header[role="banner"] .page-wrap {
-      width: 100%; } }
-
-@media screen and (max-width: 1024px) {
-    /* line 156, scss/style.scss */
-    .page-wrap {
-      /*background: rgba(red, 0.2);*/ } }
-  @media screen and (max-width: 768px) {
-    /* line 156, scss/style.scss */
-    .page-wrap {
-      /*background: rgba(blue, 0.2);*/ } }
-  @media screen and (max-width: 640px) {
-    /* line 156, scss/style.scss */
-    .page-wrap {
-      /*background: rgba(green, 0.2);*/
-      width: 94%; } }
-  @media screen and (min-width: 1600px) {
-    /* line 156, scss/style.scss */
-    .page-wrap {
-      /*background: rgba(yellow, 0.2);*/ } }
-
 
 #main-nav li {
     float: left;
@@ -112,12 +81,13 @@ a#logo {
 
 #home {
     background: #d24d57 url("../images/header-bg-1024.jpg") 50% 0 no-repeat fixed;
+    background-size: cover;
     padding: 12.5em 0;
+
+    width: 100%;
     color: #fff;
     text-align: center;
     transition: padding 0.2s linear;
-}
-
 }
 
 #home .check-work {
@@ -131,3 +101,131 @@ a#logo {
 /* div, article, section, header, footer, nav, li {
     position: relative;
 } */
+
+hr{
+    width: 130px;
+    background-color: #a59898;
+}
+
+.button {
+    font-family: brandon-grotesque, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    margin: 0px auto;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-in-out 0s, all 1s ease 0s;
+    text-decoration: none;
+}
+#portfolio-desc{
+    display: block;
+    padding: 3em 5em;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#portfolio-desc h2 {
+    font-size: 2.5em;
+    color: brown;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 0.625em;
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+}
+
+#portfolio-desc p {
+    color: #706f6f;
+    font-size: 1.375em;
+    line-height: 1.5em;
+}
+
+#portfolio-content {
+    display: block;
+    text-align: center;
+    background-color: white;
+    padding: 5em 7em;
+    margin: 0em 3em;
+    color: #706f6f;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+#portfolio-content h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+#portfolio-content a {
+    color: brown;
+    text-decoration: none;
+}
+#about{
+    background: url("../images/stream.jpg") no-repeat  #d24d57;
+    padding: 14.5em 0em;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+#about .page-wrap{
+    line-height: 1.2em;
+    font-size: 1.4em;
+    padding: 0 10%;
+}
+#about h2{
+    text-transform: uppercase;
+    font-family: brandon-grotesque, Helvetica, Arial, sans-serif;
+    font-size: 2.2em;
+}
+
+#about span.strikethrough{
+    text-decoration: line-through;
+}
+#about a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 5px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#contact {
+    background:#d24d57;
+    padding-top: 100px;
+    margin-top: -5%;
+    text-align: center;
+    
+}
+
+#contact h2{
+    text-transform: uppercase;
+    font-size: 2.3em;
+    color: #fff;
+    font-family: brandon-grotesque, Helvetica, Arial, sans-serif;
+}
+
+#contact p {
+    color: #fff;
+    line-height: 1.1em;
+    font-size: 130%;
+    padding: 0 380px;
+    margin-bottom: 3.5em;
+}
+
+#contact #send-mail{
+    border: 2px solid #fff;
+    text-decoration: none;
+    padding: 20px 25px;
+    color:white;
+    width: 20%;
+}
+
+div.social-links-container{
+    margin-top: 100px;
+}
+
+ul.social-links {
+    display: inline;
+}
